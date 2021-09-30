@@ -1,0 +1,19 @@
+/* Organizar os estilos em ordem alfabética por bloco */
+
+/* FOOTER */
+
+footer {
+  color: #2b0955;
+  font-size: 1.1rem;
+  margin: 0;
+  padding: 1rem;
+}
+
+a {
+  margin: 3px;
+  color: inherit;
+}
+
+i {
+  font-size: 1.4rem;
+}
