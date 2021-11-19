@@ -1,5 +1,45 @@
 /* Organizar os estilos em ordem alfabética por bloco */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* VOLUNTEER BANNER */
+#bold-and-gray {
+  font-weight: bold;
+  color: #c4c4c4;
+}
+
+.dark-purple-container {
+  background-color: #2b0955;
+  color: #ffffff;
+  text-align: center;
+  padding: 50px 0 40px 0;
+  height: 75vh;
+  font-size: 2em;
+}
+
+button {
+  background-color: #f3b81e;
+  color: #0b0a0a;
+  font-size: 0.8em;
+  border-radius: 10px;
+  border: none;
+  padding: 5px 25px;
+}
+
+button:hover {
+  background-color: #f3b81e;
+  color: #0b0a0a;
+  opacity: 0.8;
+}
+
 /* FOOTER */
 
 footer {
