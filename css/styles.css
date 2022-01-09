@@ -1,41 +1,56 @@
 /* Organizar os estilos em ordem alfabética por bloco */
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
   font-family: "Poppins", sans-serif;
 }
 
+.volunteers-characteristics {
+  text-align: center;
+}
+
 /* CAROUSEL CONTAINER */
+#opportunities-title {
+  color: #2b0955;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 60px;
+  font-weight: 600;
+  padding: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .light-purple-container {
   background-color: #ada7ce;
 }
 
-.oportunity-card {
+.opportunity-card {
   background-color: #faf7f7;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  padding: 20px;
-  margin-bottom: 20px;
-  width: 17em;
   height: 18em;
+  margin-bottom: 20px;
   margin: 0 auto;
+  padding: 20px;
+  width: 17em;
 }
 
-.oportunity-title {
-  margin: 15px 0;
+.opportunity-title {
   border-bottom: 1px solid #e6e6e6;
-  padding-bottom: 20px;
   font-weight: bold;
+  margin: 15px 0;
+  padding-bottom: 20px;
+  text-align: left;
 }
 
-.oportunity-description {
-  text-align: left;
+.opportunity-description {
   padding: 5px 10px;
+  text-align: left;
 }
 
 /* CAROUSEL */
@@ -46,25 +61,24 @@ body {
 
 /* VOLUNTEER BANNER */
 #bold-and-gray {
-  font-weight: bold;
   color: #c4c4c4;
+  font-weight: bold;
 }
 
 .dark-purple-container {
   background-color: #2b0955;
   color: #ffffff;
-  text-align: center;
-  padding: 50px 0 40px 0;
-  height: 75vh;
   font-size: 2em;
+  padding: 50px 0 40px 0;
+  text-align: center;
 }
 
 .volunteer-button {
   background-color: #f3b81e;
-  color: #0b0a0a;
-  font-size: 0.8em;
   border-radius: 10px;
   border: none;
+  color: #0b0a0a;
+  font-size: 0.8em;
   padding: 5px 25px;
 }
 
@@ -77,6 +91,7 @@ body {
 /* FOOTER */
 
 footer {
+  background-color: #ffffff;
   color: #2b0955;
   font-size: 1.1rem;
   margin: 0;
@@ -84,10 +99,16 @@ footer {
 }
 
 a {
-  margin: 3px;
   color: inherit;
+  margin: 3px;
 }
 
 i {
   font-size: 1.4rem;
+}
+
+@media screen and (max-width: 480px) {
+  #opportunities-title {
+    font-size: 40px;
+  }
 }
