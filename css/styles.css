@@ -1,28 +1,24 @@
-/* Organizar os estilos em ordem alfabética por bloco */
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 body {
+  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+  padding: 0;
 }
 
 .volunteers-characteristics {
   text-align: center;
+  text-transform: uppercase;
+  font-size: 1.3em;
+  padding: 40px 0px 30px;
+  color: #2b0955;
 }
 
 /* CAROUSEL CONTAINER */
-#opportunities-title {
-  color: #2b0955;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 60px;
-  font-weight: 600;
-  padding: 30px;
+
+.carousel-item {
+  height: 350px;
   text-align: center;
-  text-transform: uppercase;
 }
 
 .light-purple-container {
@@ -34,10 +30,25 @@ body {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   height: 18em;
-  margin-bottom: 20px;
   margin: 0 auto;
+  margin-bottom: 20px;
   padding: 20px;
   width: 17em;
+}
+
+.opportunity-description {
+  padding: 5px 10px;
+  text-align: left;
+}
+
+#opportunities-container-title {
+  color: #2b0955;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 60px;
+  font-weight: 600;
+  padding: 30px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .opportunity-title {
@@ -48,18 +59,8 @@ body {
   text-align: left;
 }
 
-.opportunity-description {
-  padding: 5px 10px;
-  text-align: left;
-}
-
-/* CAROUSEL */
-.carousel-item {
-  height: 350px;
-  text-align: center;
-}
-
 /* VOLUNTEER BANNER */
+
 #bold-and-gray {
   color: #c4c4c4;
   font-weight: bold;
@@ -75,8 +76,8 @@ body {
 
 .volunteer-button {
   background-color: #f3b81e;
-  border-radius: 10px;
   border: none;
+  border-radius: 10px;
   color: #0b0a0a;
   font-size: 0.8em;
   padding: 5px 25px;
@@ -86,6 +87,64 @@ body {
   background-color: #f3b81e;
   color: #0b0a0a;
   opacity: 0.8;
+}
+
+/* STAGES TO BECOME A VOLUNTEER */
+
+.circles {
+  align-items: center;
+  border-radius: 50%;
+  color: #ffffff;
+  display: flex;
+  font-weight: 600;
+  height: 3.5em;
+  justify-content: center;
+  width: 3.5em;
+}
+
+.blue-circle {
+  background-color: #0d1ca4;
+}
+
+.green-circle {
+  background-color: #359d10;
+}
+
+.purple-circle {
+  background-color: #2b0955;
+}
+
+.yellow-circle {
+  background-color: #f3b81e;
+}
+
+.stages-description {
+  margin: 0px auto;
+  padding: 15px 0px 0px 10px;
+  width: 80%;
+}
+
+.volunteer-title {
+  color: #2b0955;
+  font-size: 1.8em;
+  margin: 1.6em auto 1.2em 3.5em;
+  text-transform: uppercase;
+}
+
+/* EXPECTED CHARACTERISTICS */
+
+.blue-text {
+  color: #174aff;
+  padding: 10px;
+}
+
+.green-text {
+  color: #359d10;
+  padding: 10px;
+}
+
+.heart {
+  width: 32px;
 }
 
 /* FOOTER */
@@ -110,5 +169,11 @@ i {
 @media screen and (max-width: 480px) {
   #opportunities-title {
     font-size: 40px;
+  }
+
+  .volunteer-title {
+    font-size: 1.5em;
+    margin: 22px;
+    text-align: center;
   }
 }
