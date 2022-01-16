@@ -2,8 +2,8 @@ body {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   margin: 0;
-  overflow-x: hidden;
   padding: 0;
+  overflow-x: hidden;
 }
 
 .volunteers-characteristics {
@@ -105,6 +105,14 @@ body {
   width: 3.5em;
 }
 
+.circles-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+}
+
 .blue-circle {
   background-color: #0d1ca4;
 }
@@ -121,16 +129,26 @@ body {
   background-color: #f3b81e;
 }
 
-.stages-description {
-  margin: 0px auto;
+.stages-container {
+  margin: 0;
+  /* text-align: center; */
+}
+
+.stages-description,
+.stages-description-first {
+  margin: 0 0 30px 0;
   padding: 15px 0px 0px 10px;
-  width: 80%;
+  width: 70%;
+}
+
+.stages-description-first {
+  text-align: center;
 }
 
 .volunteer-title {
   color: #2b0955;
   font-size: 1.8em;
-  margin: 1.6em auto 1.2em 3.5em;
+  margin: 1em auto 1.2em 3.5em;
   text-transform: uppercase;
 }
 
@@ -148,6 +166,11 @@ body {
 
 .heart {
   width: 32px;
+}
+
+.characteristics-container {
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 /* SPEECH CONTAINER */
@@ -210,6 +233,57 @@ body {
   box-shadow: 0px 0px 5px 5px rgba(168, 168, 168, 0.43);
 }
 
+/* SECOND BANNER */
+
+.second-banner-title {
+  color: #2b0955;
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.second-banner-subtitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.questions {
+  color: #f9573f;
+  font-size: 2rem;
+  font-weight: 600;
+  height: 80px;
+  margin: 0 26px auto auto;
+  text-align: left;
+  width: 400px;
+}
+
+.card-questions {
+  text-align: center;
+}
+
+.give-love-img {
+  width: 120px;
+}
+
+.second-banner {
+  padding: 25px 0;
+}
+
+ul {
+  margin: 0;
+  text-align: left;
+}
+
+li {
+  list-style: none;
+  margin: 10px 0 0 32px;
+}
+
 /* FOOTER */
 
 footer {
@@ -230,12 +304,33 @@ i {
 }
 
 @media screen and (max-width: 480px) {
+  li {
+    margin: 0 0 20px 0;
+  }
+
+  ul {
+    text-align: center;
+    padding: 0;
+  }
+
   #opportunities-container-title {
     font-size: 40px;
   }
 
   .card-container {
     gap: 25px;
+  }
+
+  .questions {
+    font-size: x-large;
+    height: auto;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .second-banner {
+    padding: 5px 0;
   }
 
   .speech-card {
@@ -253,6 +348,10 @@ i {
 
   .speech-text {
     order: 2;
+  }
+
+  .stages-description {
+    width: 80%;
   }
 
   .volunteer-name {
